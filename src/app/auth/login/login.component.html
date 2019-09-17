@@ -1,0 +1,18 @@
+
+      <app-panel-box>
+          <span panel-title>Login</span>
+          <div panel-body>
+                <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" [(ngModel)]="authForm.username" name = "username" id="exampleInputEmail1" placeholder="type: admin">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" [(ngModel)]="authForm.password" name="password" id="exampleInputPassword1" placeholder="type: admin">
+                        </div>
+                
+                        <button type="submit" class="btn btn-primary" (click)="login()">Submit</button>
+                      </form>
+          </div>
+      </app-panel-box>
