@@ -11,6 +11,7 @@ import { Subscriber } from 'rxjs';
 export class ProductsComponent implements OnInit {
 
       products: any = [];
+      filterProducts: any;
     
 
   constructor(private _productService : ProductsService) { }
@@ -19,6 +20,7 @@ export class ProductsComponent implements OnInit {
     // this._productService.getProducts().subscribe((data)=>{
     //   this.products = data;
     this.products = this._productService.getProducts();
+    
     };
 
 
