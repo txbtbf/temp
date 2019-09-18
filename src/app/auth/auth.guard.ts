@@ -16,7 +16,7 @@ constructor(private _authService : AuthService, private _router : Router) {}
     if (this._authService.checkLogin()) {
       return true;
     } else {
-      this._router.navigate(['/welcome']);
+      this._router.navigate(['/login']);
       return false;
     }
   }

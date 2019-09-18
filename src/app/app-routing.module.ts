@@ -14,8 +14,8 @@ const routes: Routes = [
   {path:"products/:id", component:DetailComponent, canActivate:[AuthGuard]},
   {path:"template-forms", component:TemplateComponent, canActivate:[AuthGuard]},
   {path:"reactive-forms", component:ReactiveComponent, canActivate:[AuthGuard]},
-  {path: "welcome", component:WelcomeComponent},
   {path: "login", component:LoginComponent},
+  {path: "welcome", component:WelcomeComponent},
   {path:"", redirectTo:"products", pathMatch:"full"},
   {path:"**", redirectTo:"products"}
 ];
